@@ -1,0 +1,296 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+
+.toggle{
+    display: none;
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.top{
+    width: 100%;
+}
+
+
+header{
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    width: 100%;
+}
+.container{
+    width: 1140px;
+    margin: auto;
+}
+section{
+    min-height: 100vh;
+    padding: 100px 0;
+}
+.title{
+    font-size: 35px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 2px solid teal;
+  
+    text-align: center;
+}
+html{
+    scroll-behavior: smooth;
+}
+header .logo{
+    height: 75px;
+    width: 75px;
+
+}
+header .logo img{
+    height: 75px;
+    width: 75px;
+
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+nav ul li a{
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    color: white   !important;
+    text-decoration: none;
+    padding: 0 15px;
+    text-transform: capitalize;
+    
+}
+nav ul li a{
+    color: white;
+}
+nav ul li a:hover{
+    color: teal;
+    background-color: teal;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+.main{
+    background-image: url(/img/banner.jpg);
+    background-attachment: fixed;
+    background-size: cover ;
+}
+.content{
+    text-align: center;
+}
+.content .userImage{
+    height: 200px;
+    width: 200px;
+    border: 5px solid white;
+    overflow: hidden;
+    margin: 50px auto;
+    border-radius: 200px;
+}
+.content .userImage img{
+    width: 100%;
+    height: 100%;
+}
+.content h2{
+    font-size: 25px;
+    color: white;
+    border-bottom: 4px solid white;
+    font-weight: 500;
+    display: inline-block;
+    margin: 3px auto 15px;
+}
+.mainIcon a{
+    color: white;
+    height: 25px;
+    border: 1px solid white;
+    padding: 0 3px;
+}
+.mainIcon{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(3,1fr);
+    width: 200px;
+    margin: auto;
+}
+.mainIcon a:hover{
+    background-color: teal;
+    border-color: teal ;
+}
+ #about .grid{
+     display: grid;
+     grid-template-columns: 2fr 3fr;
+     grid-gap: 50px;
+ }
+ #about .aboutContent p{
+    text-align: justify;
+ }
+ #about .aboutImage{
+        height: 500px;
+        width: 500px;
+ }
+
+ #skills{
+     background-image: url(/img/skills.jpg);
+     background-size: cover;
+     background-attachment: fixed;
+     color: white;
+ }
+ #skills .title{
+     color: white;
+ }
+ .skillsContent{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-gap: 30px;
+     font-weight: normal;
+ }
+ .skillsContent > div{
+     padding: 15px;
+ }
+ .skillsContent .upper{
+     display: flex;
+     justify-content: space-between;
+ }
+ .skillsContent .lower{
+     width: 100%;
+     height: 15px;
+     position: relative;
+     background-color: white;
+     border-radius: 50px;
+ }
+ .skillsContent .lower .percentage{
+     width: var(-width);
+     background-color: teal;
+     height: 15px;
+     margin-top: 10px;
+     border-radius: 50px;
+ }
+ #projects{
+     background-color: #f8f8f8;
+ }
+ .projectsContent{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-gap: 40px;
+ }
+ .projectsContent .project-img{
+     width: 200px;
+     height: 200px;
+     line-height: 200px;
+     margin-bottom: 15px;
+     border-radius: 200px;
+     background-color: teal;
+     border: 2px solid white;
+     text-align: center;
+     margin: 0 auto 15px;
+ }
+ .projectsContent .project-img img{
+     width: 100%;
+     height: 100%;
+     border-radius: 50%;
+     object-fit: cover;
+ }
+ .projectsContent  .projectTitle{
+     color: Teal;
+     margin: auto;
+     text-align: center;margin-bottom: 20px;
+ }
+ .projectsContent p{
+     text-align: justify;
+ }
+
+.contactContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 40px;
+}
+.inputBox{
+    position: relative;
+}
+ .inputBox span{
+     position: absolute;
+     left: 35%;
+     top: 10px
+ }
+ input{
+     border-radius: 20px;
+     margin:10px 0
+ }
+ textarea{
+     border-radius: 20px;
+ }
+ .form-box{
+    border: 4px solid teal;
+    border-radius: 20px;
+    width: 500px;
+    text-align: center;
+    background-image: url();
+ }
+
+ @media screen and(max-width:768px){
+     .container{
+         width: 100%;
+         padding: 0 15px;
+     }
+     .content .userImage{
+         height: 100%;
+         width: 150px;
+     }
+     .content .userImage img{
+        height: 100%;
+        width: 100%;
+    }
+    .aboutImage{
+        height: 250px;
+    }
+     
+ }
+ @media screen and(max-width:320px){
+    .conatiner{
+        width: 90%;
+        margin: auto-;
+    } 
+    nav ul li a{
+         width: 100%;
+         display: block;
+         background-color: rgba(0, 0, 0, 0.7);
+         font-size: 15px;
+     }
+     nav ul{
+         display: initial;
+     }
+     nav ul li{
+         width: 100%;
+     }
+     nav{
+         position: absolute;
+         top: 75%;
+         left: 90%;
+         left: 5%;
+         display: block;
+         background-color: red;
+         height: 0px;
+         overflow: hidden;
+     }
+     .toggle{
+         display: inline-block;
+         background-color: transparent;
+         border: 1px solid white;
+         height: 35px;
+         width: 35px;
+         position: absolute;
+         color: white;
+         right: 10%;
+    }
+    #projectsContent, #contact{
+        display: block;
+    }
+   
+ }
+ 
